@@ -36,6 +36,9 @@ public class Automovil {
     }
 
     public void setMarca(String marca) {
+        if (marca == null || marca.trim().isEmpty()){
+            throw new IllegalArgumentException("marca no puede ser nulo ni estar vacio");
+        }
         this.marca = marca;
     }
 
@@ -44,6 +47,9 @@ public class Automovil {
     }
 
     public void setModelo(String modelo) {
+        if (modelo == null || modelo.trim().isEmpty()){
+            throw new IllegalArgumentException("modelo no puede ser nulo ni estar vacio");
+        }
         this.modelo = modelo;
     }
 

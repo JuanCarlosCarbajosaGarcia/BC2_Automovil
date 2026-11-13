@@ -12,6 +12,8 @@ public class TestAutomovil {
         System.out.println("modelo: "+coche.getModelo());
         System.out.println("año: "+coche.getAnio());
 
-        coche.setAnio(1850);
+        //coche.setAnio(1850);
+        //coche.setMarca("");
+        //coche.setModelo("");
     }
 }
